@@ -5,13 +5,13 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'cargo build'
+        bat 'cargo build'
       }
     }
 
     stage('Test') {
       steps {
-        sh 'cargo test'
+        bat 'cargo test'
       }
     }
 
